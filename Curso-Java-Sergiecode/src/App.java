@@ -71,8 +71,8 @@ public class App {
         System.out.println("1-Café");
         System.out.println("2-Coca Cola");
         System.out.println("3-Cerveza");
-        int opcion = scanner.nextInt();
-        
+        //int opcion = scanner.nextInt();
+        int opcion = 1;
         
         switch (opcion) {
             case 1:
@@ -87,5 +87,34 @@ public class App {
         }
 
         scanner.close();
+
+
+        int[] arreglo = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        for(int i = 0; i< arreglo.length; i++){
+            if (arreglo[i] % 2 == 0) System.out.println(arreglo[i]);
+        }
+
+        int contador = 1;
+        while (contador <= arreglo.length) {
+            System.out.println(contador);
+            contador++;
+        }
+
+        for(int i = 0; i< arreglo.length ;i++){
+            System.out.println(i);
+            if (i == 5) {
+                break;
+            }
+            System.out.println(i);
+        }
+
+        System.out.println("Otro arreglo");
+        int[] otroArreglo = new int [5];
+        
+        for(int i = 0; i< otroArreglo.length; i++){
+            otroArreglo[i]=contador++;
+            System.out.println(otroArreglo[i]);
+        }
     }
 }
