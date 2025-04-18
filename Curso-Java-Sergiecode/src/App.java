@@ -116,5 +116,35 @@ public class App {
             otroArreglo[i]=contador++;
             System.out.println(otroArreglo[i]);
         }
+
+
+        Persona primera = new Persona();
+        primera.setNombre("Dario");
+        primera.setApellidos("Fernandez");
+        primera.setEdad(25);
+        primera.getEsEstudiante();
+
+        System.out.println(primera.saludo(primera.getNombre()));
+        System.out.println(primera.getNombre() + " tiene " + primera.getEdad() + " años" );
+
+
+
+
+
+        Animal animal = new Animal("Bestia", 200);
+        Perro perro = new Perro("Lola", 7);
+        Gato gato = new Gato("Dan", 4 );
+
+
+        System.out.println("El animal " + animal.nombre + " hace:");
+        System.out.println(animal.Sonido());
+        System.out.println("El animal " + perro.nombre + " hace:");
+        System.out.println(perro.Sonido());
+        System.out.println("El animal " + gato.nombre + " hace:");
+        System.out.println(gato.Sonido());
+        System.out.println("El total de animales es : " + Animal.cantAnimales());
+
+
     }
+
 }
